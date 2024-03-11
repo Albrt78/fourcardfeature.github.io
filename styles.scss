@@ -1,0 +1,254 @@
+// Primary
+$Red: hsl(0, 78%, 62%);
+$Cyan: hsl(180, 62%, 55%);
+$Orange: hsl(34, 97%, 64%);
+$Blue: hsl(212, 86%, 64%);
+
+// Neutral
+$Very-Dark-Blue: hsl(234, 12%, 34%);
+$Grayish-Blue: hsl(229, 6%, 66%);
+$Very-Light-Gray: hsl(0, 0%, 98%);
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $Very-Light-Gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100dvh;
+    flex-direction: column;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    padding-inline: 10.3rem;
+
+    main {
+        .main__header {
+            margin-top: 2rem;
+            font-size: 2.3rem;
+            font-weight: 200;
+            color: $Very-Dark-Blue;
+        }
+
+        .main__subheader {
+            font-size: 2.3rem;
+            font-weight: 600;
+            letter-spacing: 0.003rem;
+            color: $Very-Dark-Blue;
+        }
+
+        .main__desciption {
+            margin-top: 1rem;
+            padding-inline: 18rem;
+            font-size: 0.95rem;
+            line-height: 1.7;
+            color: $Grayish-Blue;
+        }
+
+        .card__wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 1.7rem;
+            margin-top: 3.3rem;
+
+            .supervisor__card {
+                text-align: left;
+                background-color: #fff;
+                border-radius: 0.7rem;
+                margin-top: 9.3rem;
+                padding-block: 1.7rem;
+                padding-inline: 2rem;
+                box-shadow: 0 7px 15px 0 $Grayish-Blue;
+                position: relative;
+                border-top: 5px solid $Cyan;
+                height: 250px;
+
+                h2 {
+                    color: $Very-Dark-Blue;
+                    font-size: 1.23rem;
+                }
+
+                p {
+                    margin-top: 0.5rem;
+                    font-size: 0.83rem;
+                    color: $Grayish-Blue;
+                    line-height: 1.7;
+                }
+
+                img {
+                    position: absolute;
+                    bottom: 2rem;
+                    right: 2.1rem;
+                }
+            }
+
+            .card__sub__wrapper {
+                display: grid;
+                grid-template-columns: 1fr;
+                row-gap: 1.4rem;
+
+                .team__builder__card {
+                    text-align: left;
+                    background-color: #fff;
+                    border-radius: 0.7rem;
+                    margin-top: 0.45rem;
+                    padding-block: 1.7rem;
+                    padding-inline: 2rem;
+                    box-shadow: 0 7px 15px 0 $Grayish-Blue;
+                    position: relative;
+                    border-top: 5px solid $Red;
+                    height: 250px;
+
+                    h2 {
+                        color: $Very-Dark-Blue;
+                        font-size: 1.23rem;
+                    }
+
+                    p {
+                        margin-top: 0.5rem;
+                        font-size: 0.83rem;
+                        color: $Grayish-Blue;
+                        line-height: 1.7;
+                    }
+
+                    img {
+                        position: absolute;
+                        bottom: 2rem;
+                        right: 2.1rem;
+                    }
+                }
+
+                .karma__card {
+                    text-align: left;
+                    background-color: #fff;
+                    border-radius: 0.7rem;
+                    margin-top: 0.45rem;
+                    padding-block: 1.7rem;
+                    padding-inline: 2rem;
+                    box-shadow: 0 7px 15px 0 $Grayish-Blue;
+                    position: relative;
+                    border-top: 5px solid $Orange;
+                    height: 250px;
+
+                    h2 {
+                        color: $Very-Dark-Blue;
+                        font-size: 1.23rem;
+                    }
+
+                    p {
+                        margin-top: 0.5rem;
+                        font-size: 0.83rem;
+                        color: $Grayish-Blue;
+                        line-height: 1.7;
+                    }
+
+                    img {
+                        position: absolute;
+                        bottom: 2rem;
+                        right: 2.1rem;
+                    }
+                }
+            }
+
+            .calculator__card {
+                text-align: left;
+                background-color: #fff;
+                border-radius: 0.7rem;
+                margin-top: 9.3rem;
+                padding-block: 1.7rem;
+                padding-inline: 2rem;
+                box-shadow: 0 7px 15px 0 $Grayish-Blue;
+                position: relative;
+                border-top: 5px solid $Blue;
+                height: 250px;
+
+                h2 {
+                    color: $Very-Dark-Blue;
+                    font-size: 1.23rem;
+                }
+
+                p {
+                    margin-top: 0.5rem;
+                    font-size: 0.83rem;
+                    color: $Grayish-Blue;
+                    line-height: 1.7;
+                }
+
+                img {
+                    position: absolute;
+                    bottom: 2rem;
+                    right: 2.1rem;
+                }
+            }
+        }
+
+        @media (max-width: 1280.98px) {
+            .main__desciption {
+                padding-inline: 2rem;
+            }
+        }
+
+        @media (max-width: 850.98px) {
+            .card__wrapper {
+                grid-template-columns: 1fr;
+
+                .supervisor__card {
+                    margin-top: 0.4rem;
+                }
+
+                .calculator__card {
+                    margin-top: 0.4rem;
+                }
+            }
+        }
+
+        @media (max-width: 576.98px) {
+            .main__header {
+                font-size: 2rem;
+            }
+
+            .main__subheader {
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 451.98px) {
+            .main__header {
+                font-size: 1.5rem;
+            }
+
+            .main__subheader {
+                font-size: 1.5rem;
+            }
+
+            .main__desciption {
+                font-size: 0.8rem;
+                padding-inline: 1rem;
+            }
+        }
+    }
+
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+
+        a {
+            color: hsl(228, 45%, 44%);
+        }
+    }
+
+    @media (max-width: 1280.98px) {
+        padding-inline: 3rem;
+    }
+
+    @media (max-width: 576.98px) {
+        padding-inline: 2rem;
+    }
+}
