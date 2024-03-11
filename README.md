@@ -44,9 +44,7 @@ Users should be able to:
 
 -   Semantic HTML5 markup
 -   CSS custom properties
--   Flexbox
 -   CSS Grid
--   Mobile-first workflow
 -   [SASS](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://sass-lang.com/&ved=2ahUKEwimuOHJ7OmEAxWIxzgGHc7BD64QFnoECAcQAQ&usg=AOvVaw0p_IRgLEbIPRGWtlW7Wph8) - CSS Prepocessor
 
 ## Author
