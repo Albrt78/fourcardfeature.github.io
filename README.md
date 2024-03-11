@@ -23,6 +23,8 @@ This is a solution to the [Four card feature section challenge on Frontend Mento
 
 ## Overview
 
+Frontend Mentor is an online platform that provides challenges for web developers to improve their skills by building realistic projects. These challenges typically involve creating frontend designs based on provided designs or specifications.
+
 ### The challenge
 
 Users should be able to:
@@ -31,12 +33,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Four Card Feature](./Four_card_feature_section_screenshot.png)
 
 ### Links
 
--   Solution URL: [Add solution URL here](https://your-solution-url.com)
--   Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+-   Solution URL: [Four Card Feature](https://github.com/Albrt78/fourcardfeature.github.io)
+-   Live Site URL: [Four Card Feature](https://albrt78.github.io/fourcardfeature.github.io/)
 
 ### Built with
 
@@ -45,10 +47,8 @@ Users should be able to:
 -   Flexbox
 -   CSS Grid
 -   Mobile-first workflow
--   [React](https://reactjs.org/) - JS library
--   [Next.js](https://nextjs.org/) - React framework
--   [Styled Components](https://styled-components.com/) - For styles
+-   [SASS](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://sass-lang.com/&ved=2ahUKEwimuOHJ7OmEAxWIxzgGHc7BD64QFnoECAcQAQ&usg=AOvVaw0p_IRgLEbIPRGWtlW7Wph8) - CSS Prepocessor
 
 ## Author
 
--   Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+-   Frontend Mentor - [@Albrt78](https://www.frontendmentor.io/profile/Albrt78)
