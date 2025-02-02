@@ -20,34 +20,30 @@ $Very-Light-Gray: hsl(0, 0%, 98%);
 
 body {
     background-color: $Very-Light-Gray;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100dvh;
-    flex-direction: column;
-    text-align: center;
     font-family: "Poppins", sans-serif;
-    padding-inline: 10.3rem;
 
     main {
+        text-align: center;
+
         .main__header {
-            margin-top: 2rem;
-            font-size: 2.3rem;
+            padding-top: 4.75rem;
+            font-size: 2.28rem;
             font-weight: 200;
             color: $Very-Dark-Blue;
         }
 
         .main__subheader {
-            font-size: 2.3rem;
+            font-size: 2.28rem;
             font-weight: 600;
             letter-spacing: 0.003rem;
             color: $Very-Dark-Blue;
         }
 
         .main__desciption {
-            margin-top: 1rem;
-            padding-inline: 18rem;
-            font-size: 0.95rem;
+            padding-block-start: 0.98rem;
+            padding-inline: 29rem;
+            font-size: 0.906rem;
+            letter-spacing: 0.02rem;
             line-height: 1.7;
             color: $Grayish-Blue;
         }
@@ -55,20 +51,22 @@ body {
         .card__wrapper {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
+            place-content: center;
             gap: 1.7rem;
-            margin-top: 3.3rem;
+            padding-inline: 10.5rem;
+            margin-top: 3.9rem;
 
             .supervisor__card {
                 text-align: left;
                 background-color: #fff;
-                border-radius: 0.7rem;
-                margin-top: 9.3rem;
-                padding-block: 1.7rem;
-                padding-inline: 2rem;
+                border-radius: 0.2rem;
+                margin-top: 8.87rem;
+                padding-block: 1.6rem;
+                padding-inline: 1.8rem;
                 box-shadow: 0 7px 15px 0 $Grayish-Blue;
                 position: relative;
                 border-top: 5px solid $Cyan;
-                height: 250px;
+                max-height: 250px;
 
                 h2 {
                     color: $Very-Dark-Blue;
@@ -76,7 +74,7 @@ body {
                 }
 
                 p {
-                    margin-top: 0.5rem;
+                    padding-top: 0.6rem;
                     font-size: 0.83rem;
                     color: $Grayish-Blue;
                     line-height: 1.7;
@@ -85,20 +83,19 @@ body {
                 img {
                     position: absolute;
                     bottom: 2rem;
-                    right: 2.1rem;
+                    right: 2.2rem;
                 }
             }
 
             .card__sub__wrapper {
                 display: grid;
                 grid-template-columns: 1fr;
-                row-gap: 1.4rem;
+                row-gap: 1.9rem;
 
                 .team__builder__card {
                     text-align: left;
                     background-color: #fff;
-                    border-radius: 0.7rem;
-                    margin-top: 0.45rem;
+                    border-radius: 0.2rem;
                     padding-block: 1.7rem;
                     padding-inline: 2rem;
                     box-shadow: 0 7px 15px 0 $Grayish-Blue;
@@ -112,7 +109,7 @@ body {
                     }
 
                     p {
-                        margin-top: 0.5rem;
+                        padding-top: 0.5rem;
                         font-size: 0.83rem;
                         color: $Grayish-Blue;
                         line-height: 1.7;
@@ -128,8 +125,7 @@ body {
                 .karma__card {
                     text-align: left;
                     background-color: #fff;
-                    border-radius: 0.7rem;
-                    margin-top: 0.45rem;
+                    border-radius: 0.2rem;
                     padding-block: 1.7rem;
                     padding-inline: 2rem;
                     box-shadow: 0 7px 15px 0 $Grayish-Blue;
@@ -160,14 +156,14 @@ body {
             .calculator__card {
                 text-align: left;
                 background-color: #fff;
-                border-radius: 0.7rem;
-                margin-top: 9.3rem;
-                padding-block: 1.7rem;
-                padding-inline: 2rem;
+                border-radius: 0.2rem;
+                margin-top: 8.8rem;
+                padding-block: 1.6rem;
+                padding-inline: 2.1rem;
                 box-shadow: 0 7px 15px 0 $Grayish-Blue;
                 position: relative;
                 border-top: 5px solid $Blue;
-                height: 250px;
+                max-height: 250px;
 
                 h2 {
                     color: $Very-Dark-Blue;
@@ -175,7 +171,7 @@ body {
                 }
 
                 p {
-                    margin-top: 0.5rem;
+                    padding-top: 0.5rem;
                     font-size: 0.83rem;
                     color: $Grayish-Blue;
                     line-height: 1.7;
@@ -183,72 +179,229 @@ body {
 
                 img {
                     position: absolute;
-                    bottom: 2rem;
-                    right: 2.1rem;
+                    bottom: 2.1rem;
+                    right: 1.8rem;
                 }
             }
         }
 
         @media (max-width: 1280.98px) {
+            .main__header {
+                font-size: 2.6rem;
+            }
+
+            .main__subheader {
+                font-size: 2.5rem;
+            }
+
             .main__desciption {
-                padding-inline: 2rem;
+                padding-inline: 10rem;
+                font-size: 1.2rem;
+            }
+
+            .card__wrapper {
+                padding-inline: 2.5rem;
             }
         }
 
-        @media (max-width: 850.98px) {
+        @media (max-width: 885.98px) {
+            .main__header {
+                font-size: 3rem;
+            }
+
+            .main__subheader {
+                font-size: 2.5rem;
+            }
+
+            .main__desciption {
+                padding-inline: 2rem;
+            }
+
             .card__wrapper {
                 grid-template-columns: 1fr;
 
                 .supervisor__card {
                     margin-top: 0.4rem;
+                    height: 250px;
+
+                    h2 {
+                        font-size: 2rem;
+                    }
+
+                    p {
+                        font-size: 1.2rem;
+                    }
+                }
+
+                .card__sub__wrapper {
+                    .team__builder__card {
+                        h2 {
+                            font-size: 2rem;
+                        }
+
+                        p {
+                            font-size: 1.2rem;
+                        }
+                    }
+
+                    .karma__card {
+                        h2 {
+                            font-size: 2rem;
+                        }
+
+                        p {
+                            font-size: 1.2rem;
+                        }
+                    }
                 }
 
                 .calculator__card {
                     margin-top: 0.4rem;
+                    height: 250px;
+
+                    h2 {
+                        font-size: 2rem;
+                    }
+
+                    p {
+                        font-size: 1.2rem;
+                    }
                 }
             }
         }
 
         @media (max-width: 576.98px) {
             .main__header {
-                font-size: 2rem;
+                font-size: 2.5rem;
             }
 
             .main__subheader {
-                font-size: 2rem;
+                font-size: 2.4rem;
+            }
+
+            .main__desciption {
+                font-size: 1.15rem;
             }
         }
 
-        @media (max-width: 451.98px) {
+        @media (max-width: 450.98px) {
+            .main__header {
+                font-size: 1.8rem;
+            }
+
+            .main__subheader {
+                font-size: 1.7rem;
+            }
+
+            .main__desciption {
+                font-size: 0.85rem;
+                padding-inline: 1rem;
+            }
+
+            .card__wrapper {
+                .supervisor__card {
+                    h2 {
+                        font-size: 1.3rem;
+                    }
+
+                    p {
+                        font-size: 0.9rem;
+                    }
+                }
+
+                .card__sub__wrapper {
+                    .team__builder__card {
+                        h2 {
+                            font-size: 1.3rem;
+                        }
+
+                        p {
+                            font-size: 0.9rem;
+                        }
+                    }
+
+                    .karma__card {
+                        h2 {
+                            font-size: 1.3rem;
+                        }
+
+                        p {
+                            font-size: 0.9rem;
+                        }
+                    }
+                }
+
+                .calculator__card {
+                    h2 {
+                        font-size: 1.3rem;
+                    }
+
+                    p {
+                        font-size: 0.9rem;
+                    }
+                }
+            }
+        }
+
+        @media (max-width: 390.98px) {
             .main__header {
                 font-size: 1.5rem;
             }
 
             .main__subheader {
-                font-size: 1.5rem;
+                font-size: 1.4rem;
             }
 
             .main__desciption {
+                font-size: 0.9rem;
+            }
+
+            .card__wrapper {
+                margin-top: 2.5rem;
+            }
+        }
+
+        @media (max-width: 375.98px) {
+            .main__desciption {
                 font-size: 0.8rem;
-                padding-inline: 1rem;
+            }
+
+            .card__wrapper {
+                padding-inline: 1.5rem;
+            }
+        }
+
+        @media (max-width: 320.98px) {
+            .card__wrapper {
+                .supervisor__card,
+                .card__sub__wrapper .team__builder__card,
+                .card__sub__wrapper .karma__card,
+                .calculator__card {
+                    height: 230px;
+
+                    img {
+                        width: 3.1rem;
+                    }
+                }
             }
         }
     }
 
-    .attribution {
-        font-size: 11px;
-        text-align: center;
+    footer {
+        .attribution {
+            font-size: 0.7rem;
+            text-align: center;
+            font-weight: 700;
+            padding-top: 3rem;
 
-        a {
-            color: hsl(228, 45%, 44%);
+            .link {
+                color: hsl(228, 45%, 44%);
+                text-decoration: none;
+
+                &:visited {
+                    color: $Red;
+                }
+            }
         }
-    }
-
-    @media (max-width: 1280.98px) {
-        padding-inline: 3rem;
-    }
-
-    @media (max-width: 576.98px) {
-        padding-inline: 2rem;
     }
 }
